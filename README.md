@@ -9,6 +9,7 @@
 8. run ```yarn build``` to build your changes
 9. run ```yarn deploy``` to deploy your changes to GitHub Pages
 
+NOTE: If git pull gives you a "hint" or "warning", you can safely ignore it.
 NOTE: If yarn deploy fails, delete node_modules/.cache/gh-pages
 ### Learn More
 
