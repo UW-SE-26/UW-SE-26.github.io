@@ -1,14 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          UW SE 26 Class Profile
-        </p>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/class-profile">
+            <MainPage />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
