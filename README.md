@@ -1,6 +1,13 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### How to setup dev environment
+1. git clone the master branch
+2. add your code
+3. run "yarn start" in the terminal to view your changes in the browser at [http://localhost:3000](http://localhost:3000)
+4. run "git add ." to add your changes
+5. run "git commit -m "Updated code message" to commit your changes
+6. run "git pull" to pull and merge your changes with remote repo
+7. run "git push" to push your changes
+8. run "yarn run build" to build your changes
+9. run "yarn run deploy" to deploy your changes to GitHub Pages
 
 ## Available Scripts
 
