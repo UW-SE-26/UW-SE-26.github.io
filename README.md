@@ -6,8 +6,9 @@
 5. run "git commit -m "Updated code message" to commit your changes
 6. run "git pull" to pull and merge your changes with remote repo
 7. run "git push" to push your changes
-8. run "yarn run build" to build your changes
-9. run "yarn run deploy" to deploy your changes to GitHub Pages
+8. run "yarn build" to build your changes
+9. run "yarn deploy" to deploy your changes to GitHub Pages
+NOTE: If yarn deploy fails, delete node_modules/.cache/gh-pages
 
 ## Available Scripts
 
