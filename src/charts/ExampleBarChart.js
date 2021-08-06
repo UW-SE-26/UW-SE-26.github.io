@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   XYPlot,
   XAxis,
@@ -24,7 +24,17 @@ function ExampleBarChart(props) {
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
-        <VerticalBarSeries data={props.data} onNearestX={(value, {index}) => setCrosshairValues([{"x": props.data.map(d => d["x"])[index], "y": props.data.map(d => d["y"])[index]}])} />
+        <VerticalBarSeries
+          data={props.data}
+          onNearestX={(value, { index }) =>
+            setCrosshairValues([
+              {
+                x: props.data.map((d) => d["x"])[index],
+                y: props.data.map((d) => d["y"])[index],
+              },
+            ])
+          }
+        />
         <Crosshair values={crosshairValues} />
       </XYPlot>
     </div>
