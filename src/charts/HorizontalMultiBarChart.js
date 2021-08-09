@@ -11,7 +11,7 @@ import {
 function HorizontalMultiBarChart(props) {
   return (
     <div>
-      <XYPlot width={300} height={300} stackBy="x">
+      <XYPlot width={300} height={300} stackBy="x" yType="ordinal">
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
