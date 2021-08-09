@@ -31,16 +31,9 @@ const data_example_weighted_scatterplot = [
 ];
 
 const data_vertical_bar = [
-  [
-    { x: 1, y: 10 },
-    { x: 2, y: 5 },
-    { x: 3, y: 15 },
-  ],
-  [
-    { x: 1, y: 12 },
-    { x: 2, y: 2 },
-    { x: 3, y: 11 },
-  ],
+  { x: 1, y: 10 },
+  { x: 2, y: 5 },
+  { x: 3, y: 15 },
 ];
 const data_vertical_multibar = [
   [
