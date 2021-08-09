@@ -35,6 +35,13 @@ const data_vertical_bar = [
   { x: 2, y: 5 },
   { x: 3, y: 15 },
 ];
+
+const data_horizontal_bar = [
+  { x: 1, y: 10 },
+  { x: 2, y: 5 },
+  { x: 3, y: 15 },
+];
+
 const data_vertical_multibar = [
   [
     { x: 1, y: 10 },
@@ -64,6 +71,7 @@ const data_horizontal_multibar = [
 export {
   data_example_line,
   data_example_bar,
+  data_horizontal_bar,
   data_vertical_bar,
   data_vertical_multibar,
   data_horizontal_multibar,
