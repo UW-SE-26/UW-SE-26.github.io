@@ -1,3 +1,5 @@
+// Example Data
+
 const data_example_line = [
   { x: 0, y: 8 },
   { x: 1, y: 5 },
@@ -11,14 +13,6 @@ const data_example_line = [
   { x: 9, y: 0 },
 ];
 
-const data_example_bar = [
-  { x: "2017", y: 3 },
-  { x: "2018", y: 7 },
-  { x: "2019", y: 10 },
-  { x: "2020", y: 9 },
-  { x: "2021", y: 15 },
-];
-
 const data_example_weighted_scatterplot = [
   { x: 1, y: 10, size: 15 },
   { x: 1.7, y: 12, size: 10 },
@@ -30,13 +24,13 @@ const data_example_weighted_scatterplot = [
   { x: 5.5, y: 7, size: 23 },
 ];
 
-const data_vertical_bar = [
+const data_example_vertical_bar = [
   { x: 1, y: 10 },
   { x: 2, y: 5 },
   { x: 3, y: 15 },
 ];
 
-const data_horizontal_bar = [
+const data_example_horizontal_bar = [
   { y: 1, x: 3 },
   { y: 2, x: 7 },
   { y: 3, x: 10 },
@@ -44,7 +38,7 @@ const data_horizontal_bar = [
   { y: 5, x: 15 },
 ];
 
-const data_vertical_multibar = [
+const data_example_vertical_multibar = [
   [
     { x: 1, y: 10 },
     { x: 2, y: 5 },
@@ -57,7 +51,7 @@ const data_vertical_multibar = [
   ],
 ];
 
-const data_horizontal_multibar = [
+const data_example_horizontal_multibar = [
   [
     { y: 1, x: 10 },
     { y: 2, x: 5 },
@@ -70,12 +64,13 @@ const data_horizontal_multibar = [
   ],
 ];
 
+// Actual Survey Result Data
+
 export {
   data_example_line,
-  data_example_bar,
-  data_horizontal_bar,
-  data_vertical_bar,
-  data_vertical_multibar,
-  data_horizontal_multibar,
+  data_example_vertical_bar,
+  data_example_horizontal_bar,
+  data_example_vertical_multibar,
+  data_example_horizontal_multibar,
   data_example_weighted_scatterplot,
 };

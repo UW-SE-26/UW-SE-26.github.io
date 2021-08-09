@@ -6,25 +6,23 @@ import {
   VerticalGridLines,
   HorizontalGridLines,
   Crosshair,
-  VerticalBarSeries,
+  MarkSeries,
 } from "react-vis";
 
-function ExampleBarChart(props) {
+function WeightedScatterPlot(props) {
   const [crosshairValues, setCrosshairValues] = useState([]);
 
   return (
     <div>
-      <XYPlot
-        height={300}
-        width={300}
-        xType="ordinal"
-        onMouseLeave={() => setCrosshairValues([])}
-      >
+      <XYPlot width={300} height={300}>
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
-        <VerticalBarSeries
+        <MarkSeries
+          className="weighted-scatterplot"
+          opacity="0.6"
+          sizeRange={[5, 15]}
           data={props.data}
           onNearestX={(value, { index }) =>
             setCrosshairValues([
@@ -41,4 +39,4 @@ function ExampleBarChart(props) {
   );
 }
 
-export default ExampleBarChart;
+export default WeightedScatterPlot;
