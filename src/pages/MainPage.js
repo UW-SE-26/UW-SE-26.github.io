@@ -1,16 +1,56 @@
-import React from "react";
-import ExampleBarChart from "../charts/ExampleBarChart"
-import ExampleLineChart from "../charts/ExampleLineChart"
-import ExampleWeightedScatterPlot from "../charts/ExampleWeightedScatterPlot"
-import {data_example_bar, data_example_line, data_example_weighted_scatterplot} from "../data"
+import React, { useState } from "react";
+import AboutPage from "./AboutPage";
+import AcademicsPage from "./AcademicsPage";
+import DemographicsPage from "./DemographicsPage";
+import SexDrugsPage from "./SexDrugsPage";
+import HousingPage from "./HousingPage";
+import MiscPage from "./MiscPage";
+import Header from "../components/Header";
 
 function MainPage() {
+  const [showAbout, setShowAbout] = useState(true);
+  const [showAcademics, setShowAcademics] = useState(false);
+  const [showDemographics, setShowDemographics] = useState(false);
+  const [showSexDrugs, setShowSexDrugs] = useState(false);
+  const [showHousing, setShowHousing] = useState(false);
+  const [showMisc, setShowMisc] = useState(false);
   return (
     <div>
-      <p>UW SE 26 Class Profile</p>
-      <ExampleBarChart data={data_example_bar} />
-      <ExampleLineChart data={data_example_line} />
-      <ExampleWeightedScatterPlot data ={data_example_weighted_scatterplot}/>
+      <Header 
+        setAbout={setShowAbout}
+        setAcademics={setShowAcademics}
+        setDemographics={setShowDemographics}
+        setSexDrugs={setShowSexDrugs}
+        setHousing={setShowHousing}
+        setMisc={setShowMisc}
+      />
+
+      {/* Causes AboutPage to be displayed if showAbout is true.
+      The same is true for all of the pages below that. */}
+      {showAbout && 
+        <AboutPage />
+      }
+
+      {showAcademics &&
+        <AcademicsPage />
+      }
+
+      {showDemographics &&
+        <DemographicsPage />
+      }
+
+      {showSexDrugs &&
+        <SexDrugsPage />
+      }
+
+      {showHousing &&
+        <HousingPage />
+      }
+
+      {showMisc &&
+        <MiscPage />
+      }
+
     </div>
   );
 }

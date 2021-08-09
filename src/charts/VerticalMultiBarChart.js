@@ -5,39 +5,31 @@ import {
   YAxis,
   VerticalGridLines,
   HorizontalGridLines,
+  VerticalBarSeries,
   Crosshair,
-  LineSeries,
 } from "react-vis";
 
-function ExampleLineChart(props) {
+function VerticalMultiBarChart(props) {
   const [crosshairValues, setCrosshairValues] = useState([]);
 
   return (
     <div>
-      <XYPlot
-        height={300}
-        width={300}
-        onMouseLeave={() => setCrosshairValues([])}
-      >
+      <XYPlot width={300} height={300} stackBy="y">
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
-        <LineSeries
-          data={props.data}
+        <VerticalBarSeries
+          data={props.data[0]}
           onNearestX={(value, { index }) =>
-            setCrosshairValues([
-              {
-                x: props.data.map((d) => d["x"])[index],
-                y: props.data.map((d) => d["y"])[index],
-              },
-            ])
+            setCrosshairValues(props.data.map((d) => d[index]))
           }
         />
+        <VerticalBarSeries data={props.data[1]} />
         <Crosshair values={crosshairValues} />
       </XYPlot>
     </div>
   );
 }
 
-export default ExampleLineChart;
+export default VerticalMultiBarChart;

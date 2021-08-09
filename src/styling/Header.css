@@ -1,0 +1,19 @@
+.main_header {
+    margin: 0 0 1em 0;
+    background-color: black;
+    height: 4em;
+    color: white;
+}
+
+.main_header_button {
+    padding: 1.75em 1em 1.75em 1em;
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-style: none;
+    float: right;
+}
+
+.main_header_button:hover {
+    background-color: grey;
+}
