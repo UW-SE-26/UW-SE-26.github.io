@@ -37,9 +37,11 @@ const data_vertical_bar = [
 ];
 
 const data_horizontal_bar = [
-  { x: 1, y: 10 },
-  { x: 2, y: 5 },
-  { x: 3, y: 15 },
+  { x: "1", y: 3 },
+  { x: "2", y: 7 },
+  { x: "3", y: 10 },
+  { x: "4", y: 9 },
+  { x: "5", y: 15 },
 ];
 
 const data_vertical_multibar = [
