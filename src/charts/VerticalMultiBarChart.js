@@ -14,7 +14,7 @@ function VerticalMultiBarChart(props) {
 
   return (
     <div>
-      <XYPlot width={300} height={300} stackBy="y">
+      <XYPlot width={300} height={300} stackBy="y" xType="ordinal">
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
