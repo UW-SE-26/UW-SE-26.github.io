@@ -19,4 +19,15 @@ const data_example_bar = [
   { x: "2021", y: 15 },
 ];
 
-export { data_example_line, data_example_bar };
+const data_example_weighted_scatterplot = [
+  {x: 1, y: 10, size: 15},
+  {x: 1.7, y: 12, size: 10},
+  {x: 2, y: 5, size: 1},
+  {x: 3, y: 15, size: 12},
+  {x: 2.5, y: 10, size: 2},
+  {x: 3.5, y: 7, size: 4},
+  {x: 4.5, y: 8, size: 25},
+  {x: 5.5, y: 7, size: 23},
+]
+
+export { data_example_line, data_example_bar, data_example_weighted_scatterplot };
