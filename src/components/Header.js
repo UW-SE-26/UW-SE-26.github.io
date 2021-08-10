@@ -7,7 +7,7 @@ function Header(props) {
 
     return (
         <div>
-            <header className={"main_header"}>
+            <header className={'main_header'}>
                 <h3>SE 2026 Profile</h3>
                 <div class={'spacer'} />
                 <button onClick={props.setAbout} className={activeClass('about')}>About</button>
