@@ -8,49 +8,37 @@ import MiscPage from "./MiscPage";
 import Header from "../components/Header";
 
 function MainPage() {
-  const [showAbout, setShowAbout] = useState(true);
-  const [showAcademics, setShowAcademics] = useState(false);
-  const [showDemographics, setShowDemographics] = useState(false);
-  const [showSexDrugs, setShowSexDrugs] = useState(false);
-  const [showHousing, setShowHousing] = useState(false);
-  const [showMisc, setShowMisc] = useState(false);
+  const [page, setPage] = useState('about');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'academics':
+        return <AcademicsPage />;
+      case 'demographics':
+        return <DemographicsPage />;
+      case 'sexDrugs':
+        return <SexDrugsPage />;
+      case 'housing':
+        return <HousingPage />;
+      case 'misc':
+        return <MiscPage />;
+      default:
+        return <AboutPage />;
+    }
+  }
+
   return (
     <div>
       <Header 
-        setAbout={setShowAbout}
-        setAcademics={setShowAcademics}
-        setDemographics={setShowDemographics}
-        setSexDrugs={setShowSexDrugs}
-        setHousing={setShowHousing}
-        setMisc={setShowMisc}
+        setAbout={() => setPage('about')}
+        setAcademics={() => setPage('academics')}
+        setDemographics={() => setPage('demographics')}
+        setSexDrugs={() => setPage('sexDrugs')}
+        setHousing={() => setPage('housing')}
+        setMisc={() => setPage('misc')}
+        activePage={page}
       />
-
-      {/* Causes AboutPage to be displayed if showAbout is true.
-      The same is true for all of the pages below that. */}
-      {showAbout && 
-        <AboutPage />
-      }
-
-      {showAcademics &&
-        <AcademicsPage />
-      }
-
-      {showDemographics &&
-        <DemographicsPage />
-      }
-
-      {showSexDrugs &&
-        <SexDrugsPage />
-      }
-
-      {showHousing &&
-        <HousingPage />
-      }
-
-      {showMisc &&
-        <MiscPage />
-      }
-
+      {renderPage()}
     </div>
   );
 }

@@ -3,17 +3,25 @@
     background-color: black;
     height: 4em;
     color: white;
+    display: flex;
+    padding: 0 1vw;
 }
 
-.main_header_button {
+.main_header .spacer {
+    flex-grow: 1;
+}
+
+.main_header button {
     padding: 1.75em 1em 1.75em 1em;
     background-color: black;
     color: white;
-    border-color: black;
     border-style: none;
-    float: right;
 }
 
-.main_header_button:hover {
+.main_header button:hover {
     background-color: grey;
+}
+
+.main_header button.active {
+    text-decoration: underline;
 }

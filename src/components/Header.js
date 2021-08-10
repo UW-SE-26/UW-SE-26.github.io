@@ -1,58 +1,21 @@
 import React from 'react';
 import '../styling/Header.css';
 
-function Header(props){
-    //Hides all pages
-    const clearDisplay = () => {
-        props.setAbout(false);
-        props.setAcademics(false);
-        props.setDemographics(false);
-        props.setSexDrugs(false);
-        props.setHousing(false);
-        props.setMisc(false);
-    }
+function Header(props) {
 
-    //Hides all pages, then makes the demographics page visible.
-    //All of the setOnly methods work similarly.
-    const setOnlyDemographics = () => {
-        clearDisplay();
-        props.setDemographics(true);
-    }
-
-    const setOnlyAcademics = () => {
-        clearDisplay();
-        props.setAcademics(true);
-    }
-
-    const setOnlyHousing = () => {
-        clearDisplay();
-        props.setHousing(true);
-    }
-
-    const setOnlySexDrugs = () => {
-        clearDisplay();
-        props.setSexDrugs(true);
-    }
-
-    const setOnlyMisc = () => {
-        clearDisplay();
-        props.setMisc(true);
-    }
-
-    const setOnlyAbout = () => {
-        clearDisplay();
-        props.setAbout(true);
-    }
+    const activeClass = (page) => page === props.activePage && 'active';
 
     return (
         <div>
-            <header className={"main_header"}>
-                    <button onClick={ () => setOnlyAbout() } className={"main_header_button"}>About</button>
-                    <button onClick={ () => setOnlyMisc() } className={"main_header_button"}> Misc</button>
-                    <button onClick={ () => setOnlySexDrugs() } className={"main_header_button"}>Sex/Drugs</button>
-                    <button onClick={ () => setOnlyHousing() } className={"main_header_button"}>Housing</button>
-                    <button onClick={ () => setOnlyAcademics() } className={"main_header_button"}>Academics</button>
-                    <button onClick={ () => setOnlyDemographics() } className={"main_header_button"}>Demographics</button>
+            <header className={'main_header'}>
+                <h3>SE 2026 Profile</h3>
+                <div class={'spacer'} />
+                <button onClick={props.setAbout} className={activeClass('about')}>About</button>
+                <button onClick={props.setDemographics} className={activeClass('demographics')}>Demographics</button>
+                <button onClick={props.setAcademics} className={activeClass('academics')}>Academics</button>
+                <button onClick={props.setHousing} className={activeClass('housing')}>Housing</button>
+                <button onClick={props.setSexDrugs} className={activeClass('sexDrugs')}>Sex/Drugs</button>
+                <button onClick={props.setMisc} className={activeClass('misc')}> Misc</button>
             </header>
         </div>
     )
