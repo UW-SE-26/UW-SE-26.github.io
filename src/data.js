@@ -64,6 +64,12 @@ const data_example_horizontal_multibar = [
   ],
 ];
 
+const data_example_numberlinechart = [
+  { x: 'Blue', y: 10 },
+  { x: 'Grey', y: 20 },
+  { x: 'Red', y: 30 }
+];
+
 // Actual Survey Result Data
 
 export {
@@ -73,4 +79,5 @@ export {
   data_example_vertical_multibar,
   data_example_horizontal_multibar,
   data_example_weighted_scatterplot,
+  data_example_numberlinechart
 };
