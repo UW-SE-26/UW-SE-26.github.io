@@ -70,6 +70,13 @@ const data_example_numberlinechart = [
   { x: 'Red', y: 30 }
 ];
 
+const data_example_box_and_whisker_plot = [
+  { x: 'Blue', y: [5,10,32,17,18,20,16] },
+  { x: 'Grey', y: [3,8,12,29,34,42,43,50,61,75] },
+  { x: 'Blue', y: [5,10,16,17,18,20,32] },
+  { x: 'Blue', y: [5,10,16,17,18,20,32] },
+];
+
 // Actual Survey Result Data
 
 export {
@@ -79,5 +86,6 @@ export {
   data_example_vertical_multibar,
   data_example_horizontal_multibar,
   data_example_weighted_scatterplot,
-  data_example_numberlinechart
+  data_example_numberlinechart,
+  data_example_box_and_whisker_plot
 };

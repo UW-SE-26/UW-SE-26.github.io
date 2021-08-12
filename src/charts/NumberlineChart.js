@@ -44,7 +44,10 @@ function NumberlineChart(props) {
         width={450}
         onMouseLeave={() => setCrosshairValues([])}
       >
-        <LabelSeries data= {LabelsArray} />
+        <LabelSeries 
+          data= {LabelsArray} 
+          labelAnchorX= {'middle'}
+        />
         <VerticalRectSeries
           data= {arrayToUse}
           onNearestX={(value, { index }) =>

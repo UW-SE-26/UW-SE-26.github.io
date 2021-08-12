@@ -6,6 +6,7 @@ import VerticalMultiBarChart from "../charts/VerticalMultiBarChart";
 import HorizontalMultiBarChart from "../charts/HorizontalMultiBarChart";
 import WeightedScatterPlot from "../charts/WeightedScatterPlot";
 import NumberlineChart from "../charts/NumberlineChart";
+import BoxAndWhiskerPlot from "../charts/BoxAndWhiskerPlot";
 
 import {
   data_example_line,
@@ -14,7 +15,8 @@ import {
   data_example_vertical_multibar,
   data_example_horizontal_multibar,
   data_example_weighted_scatterplot,
-  data_example_numberlinechart
+  data_example_numberlinechart,
+  data_example_box_and_whisker_plot
 } from "../data";
 
 function AboutPage() {
@@ -29,6 +31,7 @@ function AboutPage() {
       <HorizontalMultiBarChart data={data_example_horizontal_multibar} />
       <WeightedScatterPlot data={data_example_weighted_scatterplot} />
       <NumberlineChart data={data_example_numberlinechart}/>
+      <BoxAndWhiskerPlot data={data_example_box_and_whisker_plot} />
     </div>
   );
 }
