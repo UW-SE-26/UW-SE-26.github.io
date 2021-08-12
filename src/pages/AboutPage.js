@@ -1,11 +1,11 @@
 import React from "react";
-import ExampleLineChart from "../charts/ExampleLineChart";
+import LineChart from "../charts/LineChart";
 import VerticalBarChart from "../charts/VerticalBarChart";
 import HorizontalBarChart from "../charts/HorizontalBarChart";
 import VerticalMultiBarChart from "../charts/VerticalMultiBarChart";
 import HorizontalMultiBarChart from "../charts/HorizontalMultiBarChart";
 import WeightedScatterPlot from "../charts/WeightedScatterPlot";
-import NumberlineChart from "../charts/NumberlineChart";
+import NumberLineChart from "../charts/NumberLineChart";
 import BoxAndWhiskerPlot from "../charts/BoxAndWhiskerPlot";
 import PieChart from "../charts/PieChart";
 
@@ -26,13 +26,13 @@ function AboutPage() {
     <div>
       About Page
       <p>UW SE 26 Class Profile</p>
-      <ExampleLineChart data={data_example_line} />
+      <LineChart data={data_example_line} />
       <VerticalBarChart data={data_example_vertical_bar} />
       <HorizontalBarChart data={data_example_horizontal_bar} />
       <VerticalMultiBarChart data={data_example_vertical_multibar} />
       <HorizontalMultiBarChart data={data_example_horizontal_multibar} />
       <WeightedScatterPlot data={data_example_weighted_scatterplot} />
-      <NumberlineChart data={data_example_numberlinechart} />
+      <NumberLineChart data={data_example_numberlinechart} />
       <BoxAndWhiskerPlot data={data_example_box_and_whisker_plot} />
       <PieChart data={data_example_pie_chart} />
     </div>

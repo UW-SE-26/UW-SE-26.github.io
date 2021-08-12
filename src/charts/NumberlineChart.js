@@ -10,7 +10,7 @@ import {
   LabelSeries,
 } from "react-vis";
 
-function NumberlineChart(props) {
+function NumberLineChart(props) {
   const [crosshairValues, setCrosshairValues] = useState([]);
 
   //Accept a standard data.js x,y array, make it easier to type
@@ -67,4 +67,4 @@ function NumberlineChart(props) {
   );
 }
 
-export default NumberlineChart;
+export default NumberLineChart;

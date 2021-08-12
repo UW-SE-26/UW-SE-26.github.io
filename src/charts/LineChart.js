@@ -9,7 +9,7 @@ import {
   LineSeries,
 } from "react-vis";
 
-function ExampleLineChart(props) {
+function LineChart(props) {
   const [crosshairValues, setCrosshairValues] = useState([]);
 
   return (
@@ -40,4 +40,4 @@ function ExampleLineChart(props) {
   );
 }
 
-export default ExampleLineChart;
+export default LineChart;
