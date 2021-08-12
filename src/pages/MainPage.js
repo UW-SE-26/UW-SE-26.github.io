@@ -8,34 +8,34 @@ import MiscPage from "./MiscPage";
 import Header from "../components/Header";
 
 function MainPage() {
-  const [page, setPage] = useState('about');
+  const [page, setPage] = useState("about");
 
   const renderPage = () => {
     switch (page) {
-      case 'academics':
+      case "academics":
         return <AcademicsPage />;
-      case 'demographics':
+      case "demographics":
         return <DemographicsPage />;
-      case 'sexDrugs':
+      case "sexDrugs":
         return <SexDrugsPage />;
-      case 'housing':
+      case "housing":
         return <HousingPage />;
-      case 'misc':
+      case "misc":
         return <MiscPage />;
       default:
         return <AboutPage />;
     }
-  }
+  };
 
   return (
     <div>
-      <Header 
-        setAbout={() => setPage('about')}
-        setAcademics={() => setPage('academics')}
-        setDemographics={() => setPage('demographics')}
-        setSexDrugs={() => setPage('sexDrugs')}
-        setHousing={() => setPage('housing')}
-        setMisc={() => setPage('misc')}
+      <Header
+        setAbout={() => setPage("about")}
+        setAcademics={() => setPage("academics")}
+        setDemographics={() => setPage("demographics")}
+        setSexDrugs={() => setPage("sexDrugs")}
+        setHousing={() => setPage("housing")}
+        setMisc={() => setPage("misc")}
         activePage={page}
       />
       {renderPage()}

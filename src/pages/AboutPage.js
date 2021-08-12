@@ -18,7 +18,7 @@ import {
   data_example_weighted_scatterplot,
   data_example_numberlinechart,
   data_example_box_and_whisker_plot,
-  data_example_pie_chart
+  data_example_pie_chart,
 } from "../data";
 
 function AboutPage() {

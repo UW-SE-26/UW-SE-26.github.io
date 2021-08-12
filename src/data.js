@@ -65,23 +65,23 @@ const data_example_horizontal_multibar = [
 ];
 
 const data_example_numberlinechart = [
-  { x: 'Blue', y: 10 },
-  { x: 'Grey', y: 20 },
-  { x: 'Red', y: 30 }
+  { x: "Blue", y: 10 },
+  { x: "Grey", y: 20 },
+  { x: "Red", y: 30 },
 ];
 
 const data_example_box_and_whisker_plot = [
-  { x: 'Blue', y: [5, 10, 32, 17, 18, 20, 16] },
-  { x: 'Grey', y: [3, 8, 12, 29, 34, 42, 43, 50, 61, 75] },
-  { x: 'Blue', y: [5, 10, 16, 17, 18, 20, 32] },
-  { x: 'Blue', y: [5, 10, 16, 17, 18, 20, 32] },
+  { x: "Red", y: [5, 10, 32, 17, 18, 20, 16] },
+  { x: "Green", y: [3, 8, 12, 29, 34, 42, 43, 50, 61, 75] },
+  { x: "Blue", y: [5, 10, 16, 17, 18, 20, 32] },
+  { x: "Orange", y: [5, 10, 16, 17, 18, 20, 32] },
 ];
 
 const data_example_pie_chart = [
   { angle: 1, className: "Example1", label: "Example1" },
   { angle: 5, className: "Example2", label: "Example2" },
-  { angle: 2, className: "Example3", label: "Example3" }
-];   //no inbuilt functions in react-vis for crosshair in RadialChart, have to figure out how to do that separately
+  { angle: 2, className: "Example3", label: "Example3" },
+]; //no inbuilt functions in react-vis for crosshair in RadialChart, have to figure out how to do that separately
 
 // Actual Survey Result Data
 
@@ -94,5 +94,5 @@ export {
   data_example_weighted_scatterplot,
   data_example_numberlinechart,
   data_example_box_and_whisker_plot,
-  data_example_pie_chart
+  data_example_pie_chart,
 };
