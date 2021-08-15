@@ -1,15 +1,20 @@
 {
-  "short_name": "SE 2026 Class Profile",
-  "name": "Software Engineering 2026 Class Profile | University of Waterloo",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "se26Logo192.jpg",
-      "type": "image/jpeg",
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "se26Logo512.jpg",
-      "type": "image/jpeg",
+      "src": "logo512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
