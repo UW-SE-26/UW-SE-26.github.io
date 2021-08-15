@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import {
   XYPlot,
-  XAxis,
-  YAxis,
-  VerticalGridLines,
-  HorizontalGridLines,
   Crosshair,
   VerticalRectSeries,
   LabelSeries,

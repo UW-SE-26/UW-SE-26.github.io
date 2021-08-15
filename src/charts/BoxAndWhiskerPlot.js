@@ -37,7 +37,7 @@ function BoxAndWhiskerPlot(props) {
     var workingListLength = workingList.length;
     var medianIndex = workingListLength / 2;
 
-    if (medianIndex % 2 != 0) {
+    if (medianIndex % 2 !== 0) {
       var upperLimit = medianIndex - 0.5;
       var lowerLimit = medianIndex + 0.5;
     } else {
@@ -49,7 +49,7 @@ function BoxAndWhiskerPlot(props) {
 
     function findMedian(ar) {
       var halfLocation = ar.length / 2;
-      if (halfLocation % 1 != 0) {
+      if (halfLocation % 1 !== 0) {
         var median = ar[halfLocation - 0.5];
       } else {
         var median = (ar[halfLocation - 1] + ar[halfLocation]) / 2;

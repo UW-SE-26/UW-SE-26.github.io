@@ -1,6 +1,8 @@
+/* purple's from https://uwaterloo.ca/brand/how-express-waterloos-brand/colour */
+
 .main_header {
     margin: 0 0 1em 0;
-    background-color: black;
+    background-color: #57058B;
     height: 4em;
     color: white;
     display: flex;
@@ -12,14 +14,16 @@
 }
 
 .main_header button {
-    padding: 1.75em 1em 1.75em 1em;
-    background-color: black;
+    padding: 1.25em 1.5em;
+    background-color: transparent;
     color: white;
     border-style: none;
+    margin: auto 0;
+    border-radius: 4px;
 }
 
 .main_header button:hover {
-    background-color: grey;
+    background-color: #8100B4;
 }
 
 .main_header button.active {
