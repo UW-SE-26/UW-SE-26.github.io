@@ -3,29 +3,36 @@
 .main_header {
     margin: 0 0 1em 0;
     background-color: #57058B;
-    height: 4em;
+    height: 5em;
     color: white;
     display: flex;
     padding: 0 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.main_header h3 {
+    margin: auto;
 }
 
 .main_header .spacer {
     flex-grow: 1;
 }
 
-.main_header button {
+.main_header .link {
     padding: 1.25em 1.5em;
     background-color: transparent;
     color: white;
     border-style: none;
     margin: auto 0;
     border-radius: 4px;
+    text-decoration: none;
 }
 
-.main_header button:hover {
+.main_header .link:hover {
     background-color: #8100B4;
 }
 
-.main_header button.active {
+.main_header .link.active {
     text-decoration: underline;
 }
