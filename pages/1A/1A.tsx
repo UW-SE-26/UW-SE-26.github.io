@@ -46,8 +46,10 @@ const data = [
   },
 ];
 
-export default function Term() {
+function Term() {
   return (
     <CustomBarChart data={data} />
   );
 }
+
+export default Term;
