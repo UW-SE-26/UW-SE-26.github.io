@@ -1,5 +1,5 @@
 import React from "react";
-import CustomBarChart from "../components/charts/CustomBarChart"
+import CustomBarChart from "../components/charts/CustomBarChart";
 
 const data = [
   {
