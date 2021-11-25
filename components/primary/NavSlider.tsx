@@ -5,6 +5,7 @@ import {
   SliderFilledTrack,
   SliderThumb,
   Box,
+  Center,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import colors from "../../colors";
@@ -52,19 +53,23 @@ function NavSlider() {
 
   return (
     <div>
-      <Slider
-        defaultValue={Value || 0}
-        min={0}
-        max={14}
-        step={1}
-        onChange={(val) => handleChange(val)}
-      >
-        <SliderTrack bg={colors.uweng.light}>
-          <Box position="relative" right={10} />
-          <SliderFilledTrack bg={colors.uweng.dark} />
-        </SliderTrack>
-        <SliderThumb boxSize={6} bg={colors.uweng.dark} />
-      </Slider>
+      <Center>
+        <Slider
+          defaultValue={Value || 0}
+          min={0}
+          max={14}
+          step={1}
+          onChange={(val) => handleChange(val)}
+          width="95%"
+          m={4}
+        >
+          <SliderTrack bg={colors.uweng.light}>
+            <Box position="relative" right={10} />
+            <SliderFilledTrack bg={colors.uweng.dark} />
+          </SliderTrack>
+          <SliderThumb boxSize={6} bg={colors.uweng.dark} />
+        </Slider>
+      </Center>
     </div>
   );
 }
