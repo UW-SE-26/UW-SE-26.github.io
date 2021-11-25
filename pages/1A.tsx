@@ -1,5 +1,6 @@
 import React from "react";
 import CustomBarChart from "../components/charts/CustomBarChart";
+import CustomBoxPlot from "../components/charts/CustomBoxPlot";
 
 const data = [
   {
@@ -47,5 +48,10 @@ const data = [
 ];
 
 export default function Term() {
-  return <CustomBarChart data={data} />;
+  return (
+    <>
+      <CustomBoxPlot />
+      <CustomBarChart data={data} />
+    </>
+  );
 }
