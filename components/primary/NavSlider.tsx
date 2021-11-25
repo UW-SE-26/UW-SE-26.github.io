@@ -7,6 +7,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import colors from "../../colors";
 
 function NavSlider() {
   const router = useRouter();
@@ -58,11 +59,11 @@ function NavSlider() {
         step={1}
         onChange={(val) => handleChange(val)}
       >
-        <SliderTrack bg="red.100">
+        <SliderTrack bg={colors.uweng.light}>
           <Box position="relative" right={10} />
-          <SliderFilledTrack bg="tomato" />
+          <SliderFilledTrack bg={colors.uweng.dark} />
         </SliderTrack>
-        <SliderThumb boxSize={6} />
+        <SliderThumb boxSize={6} bg={colors.uweng.dark} />
       </Slider>
     </div>
   );
