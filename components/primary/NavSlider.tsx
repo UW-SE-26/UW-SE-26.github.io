@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Slider,
   SliderTrack,
@@ -50,6 +50,13 @@ function NavSlider() {
     console.log("GOTO: ", term);
     router.push(`/${term}`);
   };
+
+  useEffect(() => {
+    console.log("window dims:", window.innerWidth, window.innerHeight);
+    if (window.innerWidth < window.innerHeight) {
+      router.push("/mobile");
+    }
+  }, []);
 
   return (
     <div>
