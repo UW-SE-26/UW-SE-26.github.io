@@ -1,10 +1,10 @@
 import React from 'react'
-import Term from './1A/1A.tsx'
+import Term_1A from './1A'
 
 function Home() {
   return (
     <div>
-      <Term />
+      <Term_1A />
     </div>
   )
 }
