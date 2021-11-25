@@ -53,7 +53,7 @@ function NavSlider() {
 
   useEffect(() => {
     console.log("window dims:", window.innerWidth, window.innerHeight);
-    if (window.innerWidth < window.innerHeight) {
+    if (typeof window !== "undefined" && window.innerWidth < 1536) {
       router.push("/mobile");
     }
   }, []);
